@@ -1,12 +1,12 @@
 module github.com/kappaflow/rekoda
 
-go 1.18
+go 1.20
 
 require (
 	github.com/antonfisher/nested-logrus-formatter v1.3.1
 	github.com/dustin/go-humanize v1.0.0
 	github.com/google/go-cmp v0.5.5
-	github.com/grafov/m3u8 v0.11.1
+	github.com/grafov/m3u8 v0.12.0
 	github.com/hako/durafmt v0.0.0-20210608085754-5c1018a4e16b
 	github.com/hashicorp/golang-lru v0.5.1
 	github.com/mitchellh/go-homedir v1.1.0
@@ -17,7 +17,7 @@ require (
 	golang.org/x/sys v0.0.0-20210823070655-63515b42dcdf // indirect
 )
 
-require github.com/wmw64/twitchpl v0.5.0
+require github.com/kappaflow/twitchpl v0.0.0-20230908145759-7b2ea36520c1
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect

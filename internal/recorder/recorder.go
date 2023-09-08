@@ -17,9 +17,9 @@ import (
 	"github.com/grafov/m3u8"
 	"github.com/hako/durafmt"
 	lru "github.com/hashicorp/golang-lru"
-	log "github.com/sirupsen/logrus"
 	"github.com/kappaflow/rekoda/internal/config"
-	"github.com/wmw64/twitchpl"
+	"github.com/kappaflow/twitchpl"
+	log "github.com/sirupsen/logrus"
 )
 
 var (
@@ -82,6 +82,7 @@ func Start() {
 				cLog.Info("Trying to get m3u8 live playlist")
 				pl, err := twitchpl.Get(context.Background(), u.User, true)
 				if err != nil {
+					fmt.Println(err)
 					cLog.Info("Channel is offline or banned.")
 					continue
 				}
